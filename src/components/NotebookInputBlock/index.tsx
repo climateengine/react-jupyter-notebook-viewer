@@ -129,7 +129,6 @@ const NotebookInputBlock: React.FC<NotebookInputBlockType> = (props) => {
             <div className={`w-full md:w-5/6 xl:w-11/12 ${inputCodeBlockClassName || ""}`}>
                 <SynaxHighlighter
                     language={notebookInputLanguage}
-                    style={inputCodeDarkTheme ? vs2015 : github}
                     showLineNumbers={showInputLineNumbers}>
                     {source}
                 </SynaxHighlighter>
